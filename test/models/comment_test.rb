@@ -1,15 +1,19 @@
 # == Schema Information
 #
-# Table name: posts
+# Table name: comments
 #
 #  id         :integer          not null, primary key
-#  title      :string
+#  author     :string
 #  body       :text
+#  post_id    :integer
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
-#  author     :string
 #
 
-class Post < ApplicationRecord
-	has_many :comments
+require 'test_helper'
+
+class CommentTest < ActiveSupport::TestCase
+  # test "the truth" do
+  #   assert true
+  # end
 end
